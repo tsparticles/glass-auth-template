@@ -9,36 +9,33 @@
     <title>Signin Template - tsParticles</title>
 
     <!-- Custom styles for this template -->
-    <link href="css/particles.css" rel="stylesheet"/>
-    <link href="css/auth.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="css/auth.css" rel="stylesheet" />
 </head>
 
 <body>
-<div id="tsparticles"></div>
-<main class="box">
-    <h2>Login</h2>
+    <div id="tsparticles"></div>
     <form>
-        <div class="inputBox">
-            <label for="userName">Username</label>
-            <input type="text" name="userName" id="userName" placeholder="type your username" required/>
-        </div>
-        <div class="inputBox">
-            <label for="userPassword">Password</label>
-            <input type="password" name="userPassword" id="userPassword" placeholder="type your password"
-                   required/>
-        </div>
-        <div>
-            <button type="submit" name="" style="float: left;">Submit</button>
-            <a class="button" href="register.html" style="float: left;">Register</a>
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button>Log In</button>
+        <div class="social">
+            <div class="go"><i class="fab fa-google"></i> Google</div>
+            <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
         </div>
     </form>
-</main>
-<footer>
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.1/tsparticles.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.1/tsparticles.min.js"
         integrity="sha256-D6LXCdCl4meErhc25yXnxIFUtwR96gPo+GtLYv89VZo=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,8 @@
 {
   "fpsLimit": 60,
+  "fullScreen": {
+    "enable": true
+  },
   "particles": {
     "number": {
       "value": 50
@@ -20,8 +23,13 @@
     "move": {
       "enable": true,
       "speed": 10,
+      "size": true,
       "direction": "top",
-      "outMode": "destroy"
+      "outModes": {
+        "default": "out",
+        "top": "destroy",
+        "bottom": "none"
+      }
     }
   },
   "interactivity": {
@@ -31,12 +39,6 @@
     }
   },
   "detectRetina": true,
-  "background": {
-    "image": "",
-    "position": "50% 50%",
-    "repeat": "no-repeat",
-    "size": "cover"
-  },
   "themes": [
     {
       "name": "light",
@@ -46,7 +48,7 @@
       },
       "options": {
         "background": {
-          "color": "#fff"
+          "color": "#f7f8ef"
         },
         "particles": {
           "color": {
@@ -69,7 +71,7 @@
       },
       "options": {
         "background": {
-          "color": "#000"
+          "color": "#080710"
         },
         "particles": {
           "color": {
@@ -86,10 +88,9 @@
     }
   ],
   "emitters": {
-    "direction": "top",
     "position": {
       "x": 50,
-      "y": 120
+      "y": 150
     },
     "rate": {
       "delay": 0.2,
